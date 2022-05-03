@@ -8,17 +8,27 @@
     "success_url": "https://",
     "stack": "container",
     "env": {
-
+        "BOT_TOKEN": {
+            "description": "telegrame @botfather bot token",
+            "required": true
+        },
         "HEROKU_APP_NAME": {
             "description": "Enter Heroku App Name",
             "required": true
         },
-
+        "HEROKU_API_KEY": {
+            "description": "Enter Heroku App Name",
+            "required": true
+        },
+        "ALIVE_LOGO": {
+            "description": "It Change Start Logo",
+            "required": false
+        }
     },
     "addons": [{
       "plan": "heroku-postgresql"
     }],
     "buildpacks": [{
-      "url": "heroku/nodejs"
+      "url": "Docker"
       }]
   }
