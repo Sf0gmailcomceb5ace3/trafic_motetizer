@@ -29,6 +29,6 @@
       "plan": "heroku-postgresql"
     }],
     "buildpacks": [{
-      "url": "Docker"
+      "url": "heroku/nodejs"
       }]
   }
